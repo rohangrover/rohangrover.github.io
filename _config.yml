@@ -265,6 +265,7 @@ plugins:
   - jekyll-gist
   - jekyll-feed
   - jekyll-redirect-from
+  - jekyll-analytics
 # mimic GitHub Pages with --safe
 whitelist:
   - jekyll-paginate
@@ -309,3 +310,25 @@ compress_html:
   clippings: all
   ignore:
     envs: development
+
+
+# Jekyll Analytics
+jekyll_analytics:
+  # GoogleAnalytics:          # Add, if you want to track with Google Analytics
+  #   id: UA-123-456          # Required - replace with your tracking id
+  #   anonymizeIp: false      # Optional - Default: false - set to true for anonymized tracking
+
+  Matomo:                   # Add, if you want to track with Matomo (former Piwik Analytics)
+    url: matomo.example.com # Required - url to Matomo installation without trailing /
+    siteId: "1234"          # Required - replace with your Matomo site id (Write id as string)
+
+  # Piwik:                    # Add, if you want to track with Piwik
+  #   url: piwik.example.com  # Required - url to Piwik installation without trailing /
+  #   siteId: "1234"          # Required - replace with your Piwik site id (Write id as string)
+
+  # MPulse:                   # Add if you want to track performance with mPulse
+  #   apikey: XXXXX-YYYYY-ZZZZZ-AAAAA-23456   # Required - replace with your mPulse API key
+
+  # Plausible:
+  #   domain: 'example.com'   # The domain configured in plausible
+  #   source: 'https://plausible.example.com/js/plausible.js' # The source of the javascript
