@@ -10997,3 +10997,15 @@ section.resume-section .resume-section-content {
     padding-bottom: 5rem;
   }
 }
+
+.update-icon {
+  color: #0b2752;
+  min-width: 25px;
+  /* margin-right: 0.7rem; */
+}
+.updates {
+  list-style: none;
+  margin-left: 0;
+  padding-left: 25px;
+  text-indent: -29px;
+}
